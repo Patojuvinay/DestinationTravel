@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+   <script src="script.js"></script>
+</head>
+<body>
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="video/logo-no-background.png"  alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">contact us</a>
+                    </li>
+                   <button data-bs-target="#recap" data-bs-toggle="modal">Register Now</button>
+               </ul> 
+            </div>
+            </nav>      
+       </header>
+       <section>
+        <form action="contactus.html">
+         <div class="modal fade" id="recap">
+             <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                     <h2 class="modal-title">Register</h2>
+                     <button class="btn-close" data-bs-dismiss="modal"></button>
+                 </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                     <label for="" class="form-label">Enter Your Name</label>
+                      <input type="text" name="Enter your Name" id="" class="form-control" placeholder="NAME" aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                     <label for="" class="form-label">Enter Your Email</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Email" aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                     <label for="" class="form-label">Enter Your Password</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="password" aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Confirm Your Password</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Password" aria-describedby="helpId">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+             </div>
+            </div> 
+        </form>
+      </section>
+      <section class="container-fluid p-0">
+        <div class="bg4 lex">
+            <div>
+       <h1>What can we help you with?</h1>
+         <input type="search" name="search" class="form-control" id="search" placeholder=" Search your destnation help center ">
+            </div>
+        </div>
+       </section>
+       <section class="container text-center p-5">
+        <div
+           class="row">
+           <div class="col-6 col-lg-3 mb-2">
+               <div class="card">
+                   <h1><i class="bi bi-question-circle text-primary"></i></h1>
+                   <div class="card-body">
+                       <h4 class="card-title">Shop Help</h4>
+                       <p class="card-text">Get help with online shop orders. ebooks, or ask a question about one.</p>
+                   </div>
+               </div>
+               
+           </div>
+           <div class="col-6 col-lg-3 mb-2">
+               <div class="card">
+                   <h1><i class="bi bi-chat-left-dots text-primary"></i></h1>
+                   <div class="card-body">
+                       <h4 class="card-title">Feedback</h4>
+                       <p class="card-text">Submit feedback, send corrections on a listing, or suggest your business.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-6 col-lg-3">
+               <div class="card">
+                   <h1><i class="bi bi-briefcase text-primary"></i></h1>
+                   <div class="card-body">
+                       <h4 class="card-title">Advertising</h4>
+                       <p class="card-text">Elevate your business with lonely planet's award winning travel.</p>
+                   </div>
+               </div> 
+           </div>
+           <div class="col-6 col-lg-3">
+               <div class="card">
+                   <h1><i class="bi bi-question-circle text-primary"></i></h1>
+                   <div class="card-body">
+                       <h4 class="card-title">Other inquiries</h4>
+                       <p class="card-text">Got a different question? Here's where to find what you need.</p>
+                   </div>
+           </div>
+        </div>
+      </section>
+      <section class="container p-5" id="con">
+        <div
+            class="row">
+            <h1 class="text-center">Contact us</h1>
+            <div class="col-12 col-lg-6">
+                <form action="submit.html" onsubmit="return validation()">
+                    <input type="text" name="username" id="username" class="form-control mb-3" placeholder="Enter Your name">
+                    <p id="namenote"></p>
+                    <input type="tel" name="mobile" id="mobile" class="form-control mb-3" placeholder="Enter Your Mobile number">
+                    <p id="mobilenote"></p>
+                    <input type="text" name="email" id="email" class="form-control mb-3" placeholder="Enter Your email id">
+                    <p id="emailnote"></p>
+                    <textarea name="message" placeholder="Enter your message" id="" cols="40" class="form-control" rows="8"></textarea>
+                    <input type="submit" class="btn btn-primary mt-3 mb-3" name="" id="" >
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="video/3.avif" class="w-100" alt="">
+            </div>
+        </div>
+        
+      </section>
+      
+       <footer class="container-fluid text-white mx-auto p-3 text-center" id="flew">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+                <img src="video/logo-no-background.png" alt="">
+               <div class="mt-2">
+                <li><i class="bi bi-telephone"></i> :  +918008714629</li>
+                <li><i class="bi bi-envelope"></i> :   Destation@gmail.com</li>
+                <li><i class="bi bi-geo-alt"></i> : 16 west model town, <br>
+                                                        Andheri east, Mumbai <br> india.
+                
+                </li>
+               </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+                <h4>Company</h4>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+               <li><a href="aboutus.html">About us</a></li>
+               <li><a href="contactus.html">Conatct us </a></li>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3">
+            <h4>Support</h4>
+            <li><a href="service.html">Service</a></li>
+            <li>Careers</li>
+            <li>conditions</li>
+            <li>Help center</li>
+        </div>
+            <div class="col-6 col-md-6 col-lg-3">
+                <h4>Social media</h4>
+                <li><i class="bi bi-facebook"></i> Facebook</li>
+                <li><i class="bi bi-instagram"></i> Instagram</li>
+                <li><i class="bi bi-twitter-x"></i> Twitter</li>
+                <li><i class="bi bi-whatsapp"></i> Whatsapp</li>
+            </div>
+        </div>
+    </footer>
+    <footer class="flen">
+        <p class="text-center">Copyright <i class="bi bi-c-circle"></i> 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>

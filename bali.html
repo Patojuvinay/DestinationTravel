@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+   <script src="data.js"></script>
+</head>
+<body>
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="video/logo-no-background.png"  alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">contact us</a>
+                    </li>
+                   <button data-bs-target="#recap" data-bs-toggle="modal">Register Now</button>
+               </ul> 
+            </div>
+            </nav>      
+       </header>
+       <section>
+        <form action="destination.html">
+         <div class="modal fade" id="recap">
+             <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                     <h2 class="modal-title">Register</h2>
+                     <button class="btn-close" data-bs-dismiss="modal"></button>
+                 </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                     <label for="" class="form-label">Enter Your Name</label>
+                      <input type="text" name="Enter your Name" id="" class="form-control" placeholder="NAME" aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                     <label for="" class="form-label">Enter Your Email</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Email" aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                     <label for="" class="form-label">Enter Your Password</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="password" aria-describedby="helpId">
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Confirm Your Password</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Password" aria-describedby="helpId">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+             </div>
+            </div> 
+        </form>
+      </section>
+      <section>
+        <form action="submit.html"  onsubmit="return validation()">
+            <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true">
+            <div
+                class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Booking Process
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" name="username" id="username" class="form-control mb-3" placeholder="Name">
+                        <p id="namenote"></p>
+                        <input type="tel" name="mobile" id="mobile" class="form-control mb-3" placeholder="Mobile number">
+                        <p id="mobilenote"></p>
+                        <input type="text" name="email" id="email" class="form-control mb-3" placeholder="email id">
+                        <p id="emailnote"></p>
+                        <input type="tel" class="form-control mb-3" name="person" id="person" placeholder="No of Persons"/>
+                        <p id="pernote"></p>
+                         <input type="date" class="form-control mb-2" name="" id="">
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary" name="" id="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+      </section>
+      <section class="container p-3 text-center">
+        <h1 class="text-center text-success">Bali</h1>
+        <div
+            class="row">
+            <div class="col-6 col-lg-3">
+                <h4><i class="bi bi-currency-rupee"></i>85,000</h4>
+            </div>
+            <div class="col-6 col-lg-6"></div>
+            <div class="col-6 col-lg-3">
+                <button class="lgn4" data-bs-target="#modalId" data-bs-toggle="modal" >Booking</button>
+            </div>
+        </div> 
+      </section>
+      <section class="container" id="ali">
+        <img src="bali/2.jpg" class="w-100" alt="">
+      </section>
+      <section class="container p-3" id="mat">
+        <p>Bali, an Indonesian island known as the "Island of the Gods," is a captivating destination that blends natural beauty, rich culture, and vibrant spirituality. Renowned for its stunning landscapes, Bali boasts lush rice terraces, pristine beaches with golden sands, and verdant jungles teeming with wildlife. The island is dotted with ancient temples, each a testament to the island's deep-rooted Hindu heritage and spiritual traditions. Visitors to Bali can explore majestic temples such as Uluwatu, Tanah Lot, and Besakih, each offering breathtaking views and insights into Balinese spirituality. Bali's vibrant culture is evident in its colorful festivals, traditional dances, and elaborate ceremonies, which celebrate life, nature, and the divine.</p>
+      </section>
+      <section class="container" id="mat2">
+        <h2 class="text-center mb-2">Special About Bali</h2>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+             <li>Natural Beauty: Bali is renowned for its stunning natural landscapes, including lush rice terraces in Ubud, picturesque beaches along the southern coast, and verdant jungles teeming with exotic wildlife and cascading waterfalls.</li>
+             <li>Rich Culture and Traditions: Balinese culture is deeply rooted in Hindu traditions, reflected in the island's vibrant ceremonies, colorful festivals, and intricate temple architecture. Visitors can witness traditional dance.</li>
+              <li>Spiritual Retreats and Wellness: Bali is a haven for wellness seekers, offering a plethora of yoga retreats, meditation centers, and holistic healing practices set amidst serene natural surroundings. The island's tranquil.</li>
+                <li>Balinese Cuisine: Bali's culinary scene is diverse and flavorful, showcasing a fusion of Indonesian spices, fresh seafood, and tropical fruits. Visitors can indulge in traditional Balinese dishes such as Nasi Goreng.</li>
+              <li>Art and Handicrafts: Bali is renowned for its vibrant arts and handicrafts scene, with skilled artisans producing intricate wood carvings, batik textiles, silver jewelry, and traditional Balinese paintings.</li>
+            <li>Surfing and Water Sports: Bali's world-class surf breaks, such as Uluwatu, Padang Padang, and Canggu, attract surfers from around the globe seeking exhilarating waves and epic swells. From heartfelt greetings of "Om Swastiastu" to genuine acts of kindness, the Balinese hospitality ensures memorable experiences for travelers exploring the island.</li>
+            <li>Luxurious Accommodations: Bali boasts an array of luxurious resorts, boutique hotels, and private villas nestled amidst lush tropical gardens, offering upscale amenities, personalized service, and breathtaking ocean views.</li>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img src="bali/3.jpg" class="w-100 mb-3" alt="">
+                <img src="bali/2.jpg" class="w-100 mt-3" alt="">
+            </div>
+           
+        </div>
+        </section>
+        <section class="container p-3" id="mat3">
+       <img src="bali/1.jpg" class="w-100" alt="">
+        </section>
+        <section class="container" id="mat">
+        <p>Bali, an Indonesian island known as the "Island of the Gods," is a captivating destination that blends natural beauty, rich culture, and vibrant spirituality. Renowned for its stunning landscapes, Bali boasts lush rice terraces, pristine beaches with golden sands, and verdant jungles teeming with wildlife.The island is dotted with ancient temples, each a testament to the island's deep-rooted Hindu heritage and spiritual traditions.</p>
+        </section>
+        <footer class="container-fluid text-white mx-auto p-3 text-center" id="flew">
+            <div class="row">
+                <div class="col-6 col-lg-3">
+                    <img src="video/logo-no-background.png" alt="">
+                   <div class="mt-2">
+                    <li><i class="bi bi-telephone"></i> :  +918008714629</li>
+                    <li><i class="bi bi-envelope"></i> :   Destation@gmail.com</li>
+                    <li><i class="bi bi-geo-alt"></i> : 16 west model town, <br>
+                                                            Andheri east, Mumbai <br> india.
+                    
+                    </li>
+                   </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h4>Company</h4>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destination</a></li>
+                   <li><a href="aboutus.html">About us</a></li>
+                   <li><a href="contactus.html">Conatct us </a></li>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+                <h4>Support</h4>
+                <li><a href="service.html">Service</a></li>
+                <li>Careers</li>
+                <li>conditions</li>
+                <li>Help center</li>
+            </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h4>Social media</h4>
+                    <li><i class="bi bi-facebook"></i> Facebook</li>
+                    <li><i class="bi bi-instagram"></i> Instagram</li>
+                    <li><i class="bi bi-twitter-x"></i> Twitter</li>
+                    <li><i class="bi bi-whatsapp"></i> Whatsapp</li>
+                </div>
+            </div>
+        </footer>
+        <footer class="flen">
+            <p class="text-center">Copyright <i class="bi bi-c-circle"></i> 2024 All rights reserved.</p>
+        </footer>
+</body>
+</html>
